@@ -1,0 +1,61 @@
+// US states in rough population order so the biggest buckets get pulled first.
+// Used by search.ts when a US-wide search exceeds the 25K result cap.
+
+export const US_STATES: readonly string[] = [
+  "California",
+  "Texas",
+  "Florida",
+  "New York",
+  "Pennsylvania",
+  "Illinois",
+  "Ohio",
+  "Georgia",
+  "North Carolina",
+  "Michigan",
+  "New Jersey",
+  "Virginia",
+  "Washington",
+  "Arizona",
+  "Massachusetts",
+  "Tennessee",
+  "Indiana",
+  "Missouri",
+  "Maryland",
+  "Wisconsin",
+  "Colorado",
+  "Minnesota",
+  "South Carolina",
+  "Alabama",
+  "Louisiana",
+  "Kentucky",
+  "Oregon",
+  "Oklahoma",
+  "Connecticut",
+  "Utah",
+  "Iowa",
+  "Nevada",
+  "Arkansas",
+  "Mississippi",
+  "Kansas",
+  "New Mexico",
+  "Nebraska",
+  "Idaho",
+  "West Virginia",
+  "Hawaii",
+  "New Hampshire",
+  "Maine",
+  "Montana",
+  "Rhode Island",
+  "Delaware",
+  "South Dakota",
+  "North Dakota",
+  "Alaska",
+  "Vermont",
+  "Wyoming",
+] as const;
+
+export const US_COUNTRY_TOKEN = "United States #US";
+
+export function stateLocationToken(state: string): string {
+  return `${state}, United States #US`;
+}

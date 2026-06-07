@@ -1,0 +1,25 @@
+{
+  "name": "prospeo-list-builder",
+  "version": "0.1.0",
+  "description": "CLI for building B2B lead lists via the Prospeo people search API. Takes typed filter specs, handles pagination, rate limiting, dedup, and state-by-state splitting for US searches.",
+  "type": "module",
+  "scripts": {
+    "search": "tsx src/cli.ts",
+    "enrich": "tsx src/enrich.ts",
+    "smoke": "tsx src/smoke.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "csv-parse": "^5.6.0",
+    "csv-stringify": "^6.7.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

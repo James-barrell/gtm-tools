@@ -1,0 +1,39 @@
+{
+  "name": "example-saas-with-sales",
+  "description": "SaaS companies with sales teams, US, 20 to 500 headcount, CEO/Founder/sales leadership",
+  "notes": "Reference spec. Copy and modify for real searches. NOTE: company_industry values must be EXACT enum strings. See references/prospeo-api.md for known-good values. Spelling/ampersand/case matters.",
+  "filters": {
+    "person_job_title": {
+      "include": [
+        "CEO",
+        "Founder",
+        "Co-Founder",
+        "Chief Revenue Officer",
+        "VP Sales",
+        "Head of Sales",
+        "Sales Director",
+        "Director of Sales"
+      ],
+      "exclude": ["Assistant", "Intern", "Associate"],
+      "match_only_exact_job_titles": false
+    },
+    "company_industry": {
+      "include": ["Software Development"]
+    },
+    "company_keywords": {
+      "include": ["saas", "b2b"],
+      "exclude": ["cybersecurity", "devtools", "crypto"],
+      "include_all": false
+    },
+    "company_headcount_custom": {
+      "min": 20,
+      "max": 500
+    },
+    "person_location_search": {
+      "include": ["United States #US"]
+    },
+    "person_contact_details": {
+      "email": ["VERIFIED"]
+    }
+  }
+}
