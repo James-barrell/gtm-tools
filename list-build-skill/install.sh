@@ -2,7 +2,7 @@
 set -e
 
 SKILL_DIR=".claude/skills/list-build"
-BASE_URL="https://raw.githubusercontent.com/Litehouse-gtm/gtm-tools/main/list-build-skill"
+BASE_URL="https://raw.githubusercontent.com/James-barrell/gtm-tools/main/list-build-skill"
 
 echo "Installing list-build skill..."
 
@@ -16,6 +16,6 @@ echo ""
 echo "Done. Skill installed to $SKILL_DIR"
 echo ""
 echo "Next: make sure prospeo-list-builder is set up in your project."
-echo "See https://github.com/Litehouse-gtm/gtm-tools/tree/main/prospeo-list-builder"
+echo "See https://github.com/James-barrell/gtm-tools/tree/main/prospeo-list-builder"
 echo ""
 echo "Then open Claude Code and type: /list-build"

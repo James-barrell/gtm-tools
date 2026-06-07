@@ -9,7 +9,7 @@ Works alongside the `prospeo-list-builder` CLI in this repo.
 One-line install that drops the skill into your Claude Code project:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Litehouse-gtm/gtm-tools/main/list-build-skill/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/James-barrell/gtm-tools/main/list-build-skill/install.sh | bash
 ```
 
 Or manually copy `SKILL.md` to `.claude/skills/list-build/SKILL.md` in your Claude Code project.
